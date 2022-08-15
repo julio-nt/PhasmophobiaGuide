@@ -1,0 +1,28 @@
+body {
+	background-color: black;
+	color: gainsboro;
+	font-family: sans-serif;
+}
+
+nav {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.ghost {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.ghost img {
+	height: 500px;
+	width: 400px;
+}
+
+h2 {
+	font-size: 20pt;
+	background-color: white;
+	width: fit-content;
+	padding: 10px;
+}
