@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Ghosts Tips</title>
 		<link rel="stylesheet" href="style.css" />
-		<script src="functions.js"></script>
+		<script src="script.js"></script>
 	</head>
 	<body>
 		<header>
@@ -16,15 +16,19 @@
 			<!-- GHOSTS -->
 			<section class="ghost-info">
 				<ol type="1">
-					<li onclick="toggleGhost(spirit)">Spirit</li>
-					<ul hidden id="spirit">
+					<li class="ghost-name" onclick="toggleGhost(spirit)">
+						Spirit
+					</li>
+					<ul class="ghost-description" hidden id="spirit">
 						<li>
 							When Smudged, can't hunt for 3 minutes instead of
 							the normal 1.5 minutes.
 						</li>
 					</ul>
-					<li onclick="toggleGhost(wraith)">Wraith</li>
-					<ul hidden id="wraith">
+					<li class="ghost-name" onclick="toggleGhost(wraith)">
+						Wraith
+					</li>
+					<ul class="ghost-description" hidden id="wraith">
 						<li>
 							Can't leave footsteps. Be sure to only check for
 							feet if you hear footsteps before assuming it's a
@@ -38,8 +42,10 @@
 						</li>
 						<li>Can teleport to you while using the music box.</li>
 					</ul>
-					<li onclick="toggleGhost(phantom)">Phantom</li>
-					<ul hidden id="phantom">
+					<li class="ghost-name" onclick="toggleGhost(phantom)">
+						Phantom
+					</li>
+					<ul class="ghost-description" hidden id="phantom">
 						<li>
 							Will disappear when you take a photo. You can know
 							it's a phantom for sure if your photo doesn't have
@@ -51,8 +57,10 @@
 							than normal it's a phantom.
 						</li>
 					</ul>
-					<li onclick="toggleGhost(polter)">Poltergeist</li>
-					<ul hidden id="polter">
+					<li class="ghost-name" onclick="toggleGhost(polter)">
+						Poltergeist
+					</li>
+					<ul class="ghost-description" hidden id="polter">
 						<li>
 							Can throw a bunch of things at once. A good way to
 							test is by making a pile of objects in his room and
@@ -60,8 +68,10 @@
 							exact time.
 						</li>
 					</ul>
-					<li onclick="toggleGhost(banshee)">Banshee</li>
-					<ul hidden id="banshee">
+					<li class="ghost-name" onclick="toggleGhost(banshee)">
+						Banshee
+					</li>
+					<ul class="ghost-description" hidden id="banshee">
 						<li>
 							Can only kill one person who is the target at a
 							time, that means if you are not the target you can
@@ -87,8 +97,8 @@
 						</li>
 					</ul>
 					<!--adicionar audio do grito -->
-					<li onclick="toggleGhost(jinn)">Jinn</li>
-					<ul hidden id="jinn">
+					<li class="ghost-name" onclick="toggleGhost(jinn)">Jinn</li>
+					<ul class="ghost-description" hidden id="jinn">
 						<li>Can't turn off the breaker.</li>
 						<li>
 							Will be faster while farther away when the breaker
@@ -100,8 +110,8 @@
 							enough to it.
 						</li>
 					</ul>
-					<li onclick="toggleGhost(mare)">Mare</li>
-					<ul hidden id="mare">
+					<li class="ghost-name" onclick="toggleGhost(mare)">Mare</li>
+					<ul class="ghost-description" hidden id="mare">
 						<li>Can't turn on lights.</li>
 						<li>More likely to roam from rooms with lights on.</li>
 						<li>
@@ -110,16 +120,20 @@
 						</li>
 						<li>More likely to explode lights.</li>
 					</ul>
-					<li onclick="toggleGhost(revenant)">Revenant</li>
-					<ul hidden id="revenant">
+					<li class="ghost-name" onclick="toggleGhost(revenant)">
+						Revenant
+					</li>
+					<ul class="ghost-description" hidden id="revenant">
 						<li>
 							Extremely fast when it has line of sight of a
 							player, and will be extremely slow while it sees no
 							one.
 						</li>
 					</ul>
-					<li onclick="toggleGhost(shade)">Shade</li>
-					<ul hidden id="shade">
+					<li class="ghost-name" onclick="toggleGhost(shade)">
+						Shade
+					</li>
+					<ul class="ghost-description" hidden id="shade">
 						<li>Can't hunt until 35% sanity.</li>
 						<li>
 							Can't interact with anything or junt when someone is
@@ -127,8 +141,10 @@
 						</li>
 						<li>More likely to do non-physical ghost events.</li>
 					</ul>
-					<li onclick="toggleGhost(demon)">Demon</li>
-					<ul hidden id="demon">
+					<li class="ghost-name" onclick="toggleGhost(demon)">
+						Demon
+					</li>
+					<ul class="ghost-description" hidden id="demon">
 						<li>Can hunt at 70% sanity.</li>
 						<li>Can rarely hunt at *any*% sanity.</li>
 						<li>
@@ -144,8 +160,10 @@
 							distance (5m instead the normal 3m).
 						</li>
 					</ul>
-					<li onclick="toggleGhost(yurei)">Yurei</li>
-					<ul hidden id="yurei">
+					<li class="ghost-name" onclick="toggleGhost(yurei)">
+						Yurei
+					</li>
+					<ul class="ghost-description" hidden id="yurei">
 						<li>
 							Can close a door completely and it will drain of 15%
 							sanity of nearby players.
@@ -155,16 +173,18 @@
 							during a hunt).
 						</li>
 					</ul>
-					<li onclick="toggleGhost(oni)">Oni</li>
-					<ul hidden id="oni">
+					<li class="ghost-name" onclick="toggleGhost(oni)">Oni</li>
+					<ul class="ghost-description" hidden id="oni">
 						<li>Cannot do the hiss/"air ball" ghost event.</li>
 						<li>
 							Has very strong throws, if something was thrown very
 							far, you can start thinking Oni did that.
 						</li>
 					</ul>
-					<li onclick="toggleGhost(yokai)">Yokai</li>
-					<ul hidden id="yokai">
+					<li class="ghost-name" onclick="toggleGhost(yokai)">
+						Yokai
+					</li>
+					<ul class="ghost-description" hidden id="yokai">
 						<li>
 							Can junt as early as 80% sanity if talking near it.
 						</li>
@@ -173,8 +193,10 @@
 							detect equipment nor voices very well.
 						</li>
 					</ul>
-					<li onclick="toggleGhost(hantu)">Hantu</li>
-					<ul hidden id="hantu">
+					<li class="ghost-name" onclick="toggleGhost(hantu)">
+						Hantu
+					</li>
+					<ul class="ghost-description" hidden id="hantu">
 						<li>Can't turn on the breaker.</li>
 						<li>Twice as likely to turn off the breaker.</li>
 						<li>
@@ -183,8 +205,10 @@
 						</li>
 						<li>Always has freezing as evidence on Nightmare.</li>
 					</ul>
-					<li onclick="toggleGhost(goryo)">Goryo</li>
-					<ul hidden id="goryo">
+					<li class="ghost-name" onclick="toggleGhost(goryo)">
+						Goryo
+					</li>
+					<ul class="ghost-description" hidden id="goryo">
 						<li>Cannot perform a long roam, but can still roam.</li>
 						<li>Less likely to perform a short roam.</li>
 						<li>
@@ -194,8 +218,10 @@
 						<li>Goryo's DOTS only show up on video camera.</li>
 						<li>Always has DOTS evidence on nightmare.</li>
 					</ul>
-					<li onclick="toggleGhost(myling)">Myling</li>
-					<ul hidden id="myling">
+					<li class="ghost-name" onclick="toggleGhost(myling)">
+						Myling
+					</li>
+					<ul class="ghost-description" hidden id="myling">
 						<li>
 							More likely to make noises on the Parabolic
 							Microphone.
@@ -205,8 +231,10 @@
 							hunt is the footsteps.
 						</li>
 					</ul>
-					<li onclick="toggleGhost(onryo)">Onryo</li>
-					<ul hidden id="onryo">
+					<li class="ghost-name" onclick="toggleGhost(onryo)">
+						Onryo
+					</li>
+					<ul class="ghost-description" hidden id="onryo">
 						<li>
 							Can hunt as early as 60% sanity unless there is a
 							candel nearby.
@@ -229,8 +257,10 @@
 							(candles take priority than crucifixes).
 						</li>
 					</ul>
-					<li onclick="toggleGhost(twins)">The Twins</li>
-					<ul hidden id="twins">
+					<li class="ghost-name" onclick="toggleGhost(twins)">
+						The Twins
+					</li>
+					<ul class="ghost-description" hidden id="twins">
 						<li>
 							One ghost, but has a decoy that can interact on
 							other rooms far away.
@@ -249,8 +279,10 @@
 							leveling off it's almost always the twins.
 						</li>
 					</ul>
-					<li onclick="toggleGhost(raiju)">Raiju</li>
-					<ul hidden id="raiju">
+					<li class="ghost-name" onclick="toggleGhost(raiju)">
+						Raiju
+					</li>
+					<ul class="ghost-description" hidden id="raiju">
 						<li>
 							Can hunt at 65% sanity when there is active
 							eletronic equipment nearby.
@@ -268,8 +300,10 @@
 							Raiju.
 						</li>
 					</ul>
-					<li onclick="toggleGhost(obake)">Obake</li>
-					<ul hidden id="obake">
+					<li class="ghost-name" onclick="toggleGhost(obake)">
+						Obake
+					</li>
+					<ul class="ghost-description" hidden id="obake">
 						<li>
 							25% chance to not leave fingerprints on anything.
 						</li>
@@ -284,8 +318,10 @@
 						</li>
 						<li>Always has fingerprints on Nightmare</li>
 					</ul>
-					<li onclick="toggleGhost(mimic)">The Mimic</li>
-					<ul hidden id="mimic">
+					<li class="ghost-name" onclick="toggleGhost(mimic)">
+						The Mimic
+					</li>
+					<ul class="ghost-description" hidden id="mimic">
 						<li>
 							Can mimic any ghost, including The Mimic and a
 							player (if he do that he will be a normal ghost with
@@ -305,8 +341,10 @@
 						</li>
 						<li>Always has "fake" orbs on Nightmare.</li>
 					</ul>
-					<li onclick="toggleGhost(moroi)">Moroi</li>
-					<ul hidden id="moroi">
+					<li class="ghost-name" onclick="toggleGhost(moroi)">
+						Moroi
+					</li>
+					<ul class="ghost-description" hidden id="moroi">
 						<li>
 							Curses players who use and get an answer from the
 							Sipirt Box or Parabolic Microphone. This is cured by
@@ -323,8 +361,10 @@
 						</li>
 						<li>Always has Spirit Box as evidence on Nightmare.</li>
 					</ul>
-					<li onclick="toggleGhost(deogen)">Deogen</li>
-					<ul hidden id="deogen">
+					<li class="ghost-name" onclick="toggleGhost(deogen)">
+						Deogen
+					</li>
+					<ul class="ghost-description" hidden id="deogen">
 						<li>Can hunt only at 40% sanity.</li>
 						<li>
 							Will be very fast when far away, but will be the
@@ -347,8 +387,10 @@
 						</li>
 						<li>Always has Spirit Box as evidence on Nightmare.</li>
 					</ul>
-					<li onclick="toggleGhost(thaye)">Thaye</li>
-					<ul hidden id="thaye">
+					<li class="ghost-name" onclick="toggleGhost(thaye)">
+						Thaye
+					</li>
+					<ul class="ghost-description" hidden id="thaye">
 						<li>
 							Has a chance to age every 1 to 2 minutes and every
 							30 seconds if the previous aging attempt failed.
