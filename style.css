@@ -38,13 +38,13 @@ nav {
 .img-wrap {
 	display: flex;
 	position: relative;
-	width: 600px;
-	height: 500px;
+	width: 400px;
+	height: 300px;
 }
 
 img {
-	width: 600px;
-	height: 500px;
+	width: 400px;
+	height: 300px;
 }
 
 span {
