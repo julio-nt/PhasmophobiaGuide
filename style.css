@@ -8,12 +8,12 @@ header {
 	margin-bottom: 4rem;
 }
 
-h1 {
+.page-title {
 	position: relative;
 	left: 5rem;
 	top: 1rem;
 	text-transform: uppercase;
-	width: 400px;
+	width: 50rem;
 }
 
 button {
@@ -38,13 +38,13 @@ nav {
 .img-wrap {
 	display: flex;
 	position: relative;
-	width: 400px;
-	height: 300px;
+	width: 30rem;
+	height: 20rem;
 }
 
 img {
-	width: 400px;
-	height: 300px;
+	width: 30rem;
+	height: 20rem;
 }
 
 span {
@@ -68,6 +68,21 @@ a:link {
 
 .img-wrap:hover span {
 	opacity: 1;
+}
+
+.welcome-noob {
+	display: flex;
+	flex-direction: column;
+	width: 40rem;
+	border: 1px solid white;
+	padding: 10px;
+
+	margin-top: 5rem;
+	margin-left: 2rem;
+}
+
+.welcome-noob button {
+	width: 20rem;
 }
 
 /**/
@@ -102,8 +117,8 @@ a:link {
 }
 
 .map {
-	width: 50rem;
-	height: 50rem;
+	width: 40rem;
+	height: 40rem;
 }
 
 .text {
