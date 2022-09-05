@@ -9,11 +9,14 @@
 	</head>
 	<body>
 		<header>
-			<h1 class="page-title">Phasmophobia Guide</h1>
+			<h1 class="site-title">Phasmophobia Guide</h1>
+			<h2 class="page-title">Ghosts</h2>
 			<button class="btn">
-				<a id="btn back" href="index.html">BACK</a>
+				<a id="btn home" href="index.html">HOME</a>
 			</button>
-			<h4>Click on the ghost name to show or hide it's tips.</h4>
+			<h4 class="instruction">
+				Click on the ghost name to show or hide it's tips.
+			</h4>
 			<button class="btn">
 				<a id="btn refresh" href="ghosts.html">HIDE ALL</a>
 			</button>
@@ -22,35 +25,35 @@
 			<!-- GHOSTS -->
 			<section class="ghost-info">
 				<ol type="1">
-					<li class="ghost-name" onclick="toggleGhost(spirit)">
+					<li class="ghost-name" onclick="toggleGhost('spirit')">
 						Spirit
 					</li>
 					<ul class="ghost-description" hidden id="spirit">
 						<h3>Tips</h3>
 						<li>
-							When Smudged, can't hunt for 3 minutes instead of
+							When smudged, can't hunt for 3 minutes instead of
 							the normal 1.5 minutes.
 						</li>
 						<h3>Test</h3>
 						<p>
 							There is no good test for the Spirit, but when your
 							team is at 0% sanity and the ghost is hunting
-							constantly you you can smudge it and count if it
-							will take 3 minutes or more to begin another hunt.
+							constantly you can smudge it and count if it will
+							take 3 minutes or more to begin another hunt.
 						</p>
 						<h3>Evidence:</h3>
 						<p>EMF 5</p>
 						<p>Spirit Box</p>
 						<p>Ghost Writing</p>
 					</ul>
-					<li class="ghost-name" onclick="toggleGhost(wraith)">
+					<li class="ghost-name" onclick="toggleGhost('wraith')">
 						Wraith
 					</li>
 					<ul class="ghost-description" hidden id="wraith">
 						<h3>Tips</h3>
 						<li>
 							Can't leave footsteps. Be sure to only check for
-							feet if you hear footsteps before assuming it's a
+							feet if you hear footsteps before assuming its a
 							wraith. It's possible the ghost doesn't move after
 							stepping in salt.
 						</li>
@@ -67,14 +70,14 @@
 							and walk, if there is no footprint it's 90% a Wraith
 							(that 10% is a possibility to be a Mimic mimicking
 							the Wraith at that moment, so be careful if there is
-							a suspition of Mimic.)
+							a suspicion of Mimic.)
 						</p>
 						<h3>Evidence:</h3>
 						<p>EMF 5</p>
 						<p>Spirit Box</p>
 						<p>D.O.T.S Projector</p>
 					</ul>
-					<li class="ghost-name" onclick="toggleGhost(phantom)">
+					<li class="ghost-name" onclick="toggleGhost('phantom')">
 						Phantom
 					</li>
 					<ul class="ghost-description" hidden id="phantom">
@@ -82,7 +85,7 @@
 						<li>
 							Will disappear when you take a photo. You can know
 							it's a phantom for sure if your photo doesn't have
-							any glitch effect to it, but it still says "Ghost".
+							any glitch effect to it, but is written "Ghost".
 						</li>
 						<li>
 							Will blink or flash much less frequently during a
@@ -110,7 +113,7 @@
 						<p>Fingerprints</p>
 						<p>D.O.T.S Projector</p>
 					</ul>
-					<li class="ghost-name" onclick="toggleGhost(polter)">
+					<li class="ghost-name" onclick="toggleGhost('polter')">
 						Poltergeist
 					</li>
 					<ul class="ghost-description" hidden id="polter">
@@ -134,7 +137,7 @@
 						<p>Fingerprints</p>
 						<p>Ghost Writing</p>
 					</ul>
-					<li class="ghost-name" onclick="toggleGhost(banshee)">
+					<li class="ghost-name" onclick="toggleGhost('banshee')">
 						Banshee
 					</li>
 					<ul class="ghost-description" hidden id="banshee">
@@ -183,7 +186,9 @@
 						<p>D.O.T.S Projector</p>
 					</ul>
 					<!--adicionar audio do grito -->
-					<li class="ghost-name" onclick="toggleGhost(jinn)">Jinn</li>
+					<li class="ghost-name" onclick="toggleGhost('jinn')">
+						Jinn
+					</li>
 					<ul class="ghost-description" hidden id="jinn">
 						<h3>Tips</h3>
 						<li>Can't turn off the breaker.</li>
@@ -208,7 +213,9 @@
 						<p>Fingerprints</p>
 						<p>Freezing Temperatures</p>
 					</ul>
-					<li class="ghost-name" onclick="toggleGhost(mare)">Mare</li>
+					<li class="ghost-name" onclick="toggleGhost('mare')">
+						Mare
+					</li>
 					<ul class="ghost-description" hidden id="mare">
 						<h3>Tips</h3>
 						<li>Can't turn on lights.</li>
@@ -232,7 +239,7 @@
 						<p>Ghost Orb</p>
 						<p>Ghost Writing</p>
 					</ul>
-					<li class="ghost-name" onclick="toggleGhost(revenant)">
+					<li class="ghost-name" onclick="toggleGhost('revenant')">
 						Revenant
 					</li>
 					<ul class="ghost-description" hidden id="revenant">
@@ -258,14 +265,14 @@
 						<p>Ghost Writing</p>
 						<p>Freezing Temperatures</p>
 					</ul>
-					<li class="ghost-name" onclick="toggleGhost(shade)">
+					<li class="ghost-name" onclick="toggleGhost('shade')">
 						Shade
 					</li>
 					<ul class="ghost-description" hidden id="shade">
 						<h3>Tips</h3>
 						<li>Can't hunt until 35% sanity.</li>
 						<li>
-							Can't interact with anything or junt when someone is
+							Can't interact with anything or hunt when someone is
 							in the same room.
 						</li>
 						<li>More likely to do non-physical ghost events.</li>
@@ -285,7 +292,7 @@
 						<p>Ghost Writing</p>
 						<p>Freezing Temperatures</p>
 					</ul>
-					<li class="ghost-name" onclick="toggleGhost(demon)">
+					<li class="ghost-name" onclick="toggleGhost('demon')">
 						Demon
 					</li>
 					<ul class="ghost-description" hidden id="demon">
@@ -322,7 +329,7 @@
 						<p>Ghost Writing</p>
 						<p>Freezing Temperatures</p>
 					</ul>
-					<li class="ghost-name" onclick="toggleGhost(yurei)">
+					<li class="ghost-name" onclick="toggleGhost('yurei')">
 						Yurei
 					</li>
 					<ul class="ghost-description" hidden id="yurei">
@@ -352,7 +359,7 @@
 						<p>Freezing Temperatures</p>
 						<p>D.O.T.S Projector</p>
 					</ul>
-					<li class="ghost-name" onclick="toggleGhost(oni)">Oni</li>
+					<li class="ghost-name" onclick="toggleGhost('oni')">Oni</li>
 					<ul class="ghost-description" hidden id="oni">
 						<h3>Tips</h3>
 						<li>Cannot do the hiss/"air ball" ghost event.</li>
@@ -374,13 +381,13 @@
 						<p>Freezing Temperatures</p>
 						<p>D.O.T.S Projector</p>
 					</ul>
-					<li class="ghost-name" onclick="toggleGhost(yokai)">
+					<li class="ghost-name" onclick="toggleGhost('yokai')">
 						Yokai
 					</li>
 					<ul class="ghost-description" hidden id="yokai">
 						<h3>Tips</h3>
 						<li>
-							Can junt as early as 80% sanity if talking near it.
+							Can hunt as early as 80% sanity if talking near it.
 						</li>
 						<li>
 							Has a hard time finding players because it cannot
@@ -389,23 +396,23 @@
 						<h3>Test</h3>
 						<p>
 							You and your team are talking too much and the ghost
-							is mad? Might be an Yokai.
+							is mad? Might be a Yokai.
 						</p>
 						<p>
 							You can also test by calling it when it's hunting,
-							if it is too dumb to find you it might be an Yokai.
+							if it is too dumb to find you it might be a Yokai.
 							It's specially easy to test this on Willow Street,
 							you have to stay behind the glass kitchen door
 							closed and with your flashligh on, if your flahsligh
 							is flashing and the ghost goes to the garage or
-							elsere that is not to you, it's an Yokai
+							elsere that is not to you, it's a Yokai
 						</p>
 						<h3>Evidence:</h3>
 						<p>Spirit Box</p>
 						<p>Ghost Orb</p>
 						<p>D.O.T.S Projector</p>
 					</ul>
-					<li class="ghost-name" onclick="toggleGhost(hantu)">
+					<li class="ghost-name" onclick="toggleGhost('hantu')">
 						Hantu
 					</li>
 					<ul class="ghost-description" hidden id="hantu">
@@ -427,7 +434,7 @@
 						<p>Ghost Orb</p>
 						<p>Freezing Temperatures</p>
 					</ul>
-					<li class="ghost-name" onclick="toggleGhost(goryo)">
+					<li class="ghost-name" onclick="toggleGhost('goryo')">
 						Goryo
 					</li>
 					<ul class="ghost-description" hidden id="goryo">
@@ -459,7 +466,7 @@
 						<p>Fingerprints</p>
 						<p>D.O.T.S Projector</p>
 					</ul>
-					<li class="ghost-name" onclick="toggleGhost(myling)">
+					<li class="ghost-name" onclick="toggleGhost('myling')">
 						Myling
 					</li>
 					<ul class="ghost-description" hidden id="myling">
@@ -489,7 +496,7 @@
 						<p>Fingerprints</p>
 						<p>Ghost Writing</p>
 					</ul>
-					<li class="ghost-name" onclick="toggleGhost(onryo)">
+					<li class="ghost-name" onclick="toggleGhost('onryo')">
 						Onryo
 					</li>
 					<ul class="ghost-description" hidden id="onryo">
@@ -528,7 +535,7 @@
 						<p>Ghost Orb</p>
 						<p>Freezing Temperatures</p>
 					</ul>
-					<li class="ghost-name" onclick="toggleGhost(twins)">
+					<li class="ghost-name" onclick="toggleGhost('twins')">
 						The Twins
 					</li>
 					<ul class="ghost-description" hidden id="twins">
@@ -562,7 +569,7 @@
 						<p>Spirit Box</p>
 						<p>Freezing Temperatures</p>
 					</ul>
-					<li class="ghost-name" onclick="toggleGhost(raiju)">
+					<li class="ghost-name" onclick="toggleGhost('raiju')">
 						Raiju
 					</li>
 					<ul class="ghost-description" hidden id="raiju">
@@ -603,7 +610,7 @@
 						<p>Ghost Orb</p>
 						<p>D.O.T.S Projector</p>
 					</ul>
-					<li class="ghost-name" onclick="toggleGhost(obake)">
+					<li class="ghost-name" onclick="toggleGhost('obake')">
 						Obake
 					</li>
 					<ul class="ghost-description" hidden id="obake">
@@ -633,7 +640,7 @@
 						<p>Fingerprints</p>
 						<p>Ghost Orb</p>
 					</ul>
-					<li class="ghost-name" onclick="toggleGhost(mimic)">
+					<li class="ghost-name" onclick="toggleGhost('mimic')">
 						The Mimic
 					</li>
 					<ul class="ghost-description" hidden id="mimic">
@@ -673,7 +680,7 @@
 						<p>Fingerprints</p>
 						<p>Freezing Temperatures</p>
 					</ul>
-					<li class="ghost-name" onclick="toggleGhost(moroi)">
+					<li class="ghost-name" onclick="toggleGhost('moroi')">
 						Moroi
 					</li>
 					<ul class="ghost-description" hidden id="moroi">
@@ -712,7 +719,7 @@
 						<p>Ghost Writing</p>
 						<p>Freezing Temperatures</p>
 					</ul>
-					<li class="ghost-name" onclick="toggleGhost(deogen)">
+					<li class="ghost-name" onclick="toggleGhost('deogen')">
 						Deogen
 					</li>
 					<ul class="ghost-description" hidden id="deogen">
@@ -759,7 +766,7 @@
 						<p>Ghost Writing</p>
 						<p>D.O.T.S Projector</p>
 					</ul>
-					<li class="ghost-name" onclick="toggleGhost(thaye)">
+					<li class="ghost-name" onclick="toggleGhost('thaye')">
 						Thaye
 					</li>
 					<ul class="ghost-description" hidden id="thaye">
