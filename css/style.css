@@ -212,9 +212,9 @@ li.dropdown-list:hover {
 	display: block;
 }
 
-.equipment {
+.content-section {
 	width: 25%;
-	margin-left: 2rem;
+	margin-left: 1rem;
 	padding-right: 10px;
 	border-right: 1px solid white;
 }
@@ -225,4 +225,9 @@ li.dropdown-list:hover {
 
 ol.list-none {
 	list-style: none;
+}
+
+.content {
+	display: flex;
+	flex-direction: row;
 }
