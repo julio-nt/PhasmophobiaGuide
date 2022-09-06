@@ -213,12 +213,16 @@ li.dropdown-list:hover {
 }
 
 .equipment {
-	width: 30%;
+	width: 25%;
 	margin-left: 2rem;
 	padding-right: 10px;
 	border-right: 1px solid white;
 }
 
-.section-divider {
+.divider {
 	margin-bottom: 50px;
+}
+
+ol.list-none {
+	list-style: none;
 }
