@@ -23,7 +23,7 @@
 			<nav class="nav-more">
 				<ul class="menu-more">
 					<div class="dropdown">
-						<li id="equip">Equipment</li>
+						<li id="equip">Main Equipment</li>
 						<ul class="dropdown-content">
 							<li class="dropdown-list">
 								<a href="#spirit-box">Spirit Box</a>
@@ -48,6 +48,32 @@
 							</li>
 							<li class="dropdown-list">
 								<a href="#dots">D.O.T.S Projector</a>
+							</li>
+						</ul>
+					</div>
+					<div class="dropdown">
+						<li>Secondary Equipment</li>
+						<ul class="dropdown-content">
+							<li class="dropdown-list">
+								<a href="#bone">Bone</a>
+							</li>
+							<li class="dropdown-list">
+								<a href="#mirror">Haunted Mirror</a>
+							</li>
+							<li class="dropdown-list">
+								<a href="#music-box">Music Box</a>
+							</li>
+							<li class="dropdown-list">
+								<a href="#ouija">Ouija Board</a>
+							</li>
+							<li class="dropdown-list">
+								<a href="#circle">Summoning Circle</a>
+							</li>
+							<li class="dropdown-list">
+								<a href="#tarot">Tarot Cards</a>
+							</li>
+							<li class="dropdown-list">
+								<a href="#voodoo">Voodoo Doll</a>
 							</li>
 						</ul>
 					</div>
@@ -77,14 +103,13 @@
 							</li>
 						</ul>
 					</div>
-					<li>Photos</li>
-					<li>Ghost Hunt</li>
+					<li>Hunt</li>
 				</ul>
 			</nav>
 		</header>
 		<main class="content">
 			<article id="equipment" class="content-section">
-				<h2 class="title">Equipment</h2>
+				<h2 class="title">Main Equipment</h2>
 				<section class="info" id="spirit-box">
 					<h3 class="byline">Spirit Box</h3>
 					<p class="text">
@@ -130,13 +155,23 @@
 						photos too, if the EMF is beeping you can still take a
 						picure of what was interacted with.
 					</p>
-					<p>
-						EMF 2: Ghost interacted with something (like opening
-						doors).
-					</p>
-					<p>EMF 3: Ghost threw something.</p>
-					<p>EMF 4: Manifestation / Ghost Event.</p>
-					<p>EMF 5: Evidence (it has 25% chance of ocurring).</p>
+					<ol class="list-none">
+						<li>
+							<span id="emf2">EMF 2:</span> Ghost interacted with
+							something (like opening doors).
+						</li>
+						<li>
+							<span id="emf3">EMF 3:</span> Ghost threw something.
+						</li>
+						<li>
+							<span id="emf4">EMF 4:</span> Manifestation / Ghost
+							Event.
+						</li>
+						<li>
+							<span id="emf5">EMF 5:</span> Evidence (it has 25%
+							chance of ocurring).
+						</li>
+					</ol>
 				</section>
 				<hr class="divider" />
 				<section id="uv-flash">
@@ -223,9 +258,34 @@
 					</p>
 				</section>
 				<hr class="divider" />
-
-				<!--	--CURSED POSSESSIONS--		-->
 			</article>
+
+			<!--	--SECONDARY EQUIPMENT--		-->
+			<article id="secondary-equipment" class="content-section">
+				<h2 class="title">Secondary Equipment</h2>
+				<section id="candle">
+					<h3 class="byline">Candle</h3>
+					<p class="text">
+						Candles slow sanity drain in the darkness and also
+						provides light source without attracting the Ghost. It
+						is also useful to know if the Ghost is around.
+					</p>
+					<p class="text">
+						The Ghost will ocasionally blow out a candle that is in
+						4 meters range of him and the candle will extinguish if
+						not blown after 2.5 to 5 minutes.
+					</p>
+					<p class="text">
+						Candles are essential to test for Onryo, check out the
+						test
+						<a href="./ghosts.html"
+							><span class="white-link">HERE</span></a
+						>
+					</p>
+				</section>
+			</article>
+
+			<!--	--CURSED POSSESSIONS--		-->
 			<article id="cursed-possession" class="content-section">
 				<h2 class="title">Cursed Possession</h2>
 				<section id="bone">
@@ -323,13 +383,14 @@
 					</p>
 					<ol class="list-none">
 						<li>
-							<span id="sun">THE SUN:</span> Restores 100% sanity
+							<span id="sun">THE SUN:</span> Restores sanity to
+							100%
 						</li>
 						<li>
 							<span id="moon">THE MOON:</span> Drops sanity to 0%
 						</li>
 						<li>
-							<span id="tower">THE TOWER:</span> Causes an
+							<span id="tower">THE TOWER:</span> Trigger an
 							interaction
 						</li>
 						<li>
@@ -338,7 +399,7 @@
 							25% sanity (if it burns green or red)
 						</li>
 						<li>
-							<span id="devil">THE DEVIL:</span> Causes a Ghost
+							<span id="devil">THE DEVIL:</span> Trigger a Ghost
 							Event towards the nearest player to the Ghost
 						</li>
 						<li>
@@ -348,11 +409,11 @@
 						</li>
 						<li>THE HANGED MAN: Kills the player</li>
 						<li>
-							<span id="death">DEATH:</span> Causes a Cursed Hunt
+							<span id="death">DEATH:</span> Trigger a Cursed Hunt
 						</li>
 						<li>
-							<span id="hermit">THE HERMIT:</span> Traps Ghost to
-							its room for 1 minute
+							<span id="hermit">THE HERMIT:</span> Traps the Ghost
+							to its room for 1 minute
 						</li>
 						<li>
 							<span id="fool">THE FOOL:</span> Will appear as
@@ -360,6 +421,25 @@
 							happen
 						</li>
 					</ol>
+				</section>
+				<hr class="divider" />
+				<section id="voodoo">
+					<h3 class="byline">Voodoo Doll</h3>
+					<p class="text">
+						The Voodoo Doll is really useful to get evidence,
+						probably the best Cursed Object for it. So wait until
+						you found the Ghost Room and use it to trigger evidence.
+					</p>
+					<p class="text">
+						It can be used up to 10 times, using it drops 5% sanity
+						and will pin randomly a part of the body and will
+						trigger an interaction, any interaction even EMF 5,
+						D.O.T.S, Ghost Writing and Fingerprints.
+					</p>
+					<p class="text">
+						If the pin hits the Doll's heart it will drop 10% sanity
+						and a Cursed Hunt will start.
+					</p>
 				</section>
 			</article>
 		</main>

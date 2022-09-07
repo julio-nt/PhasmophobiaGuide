@@ -188,7 +188,7 @@ ul.menu-more {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	width: 40rem;
+	width: 35rem;
 }
 
 .dropdown-content {
@@ -232,7 +232,22 @@ ol.list-none {
 	flex-direction: row;
 }
 
-/* tarot cards colors */
+/* emf and tarot colors */
+#emf2 {
+	color: green;
+}
+
+#emf3 {
+	color: yellow;
+}
+
+#emf4 {
+	color: orange;
+}
+
+#emf5 {
+	color: red;
+}
 
 #sun {
 	color: yellow;
@@ -273,3 +288,9 @@ ol.list-none {
 #fool {
 	color: violet;
 }
+
+.white-link {
+	color: white;
+}
+
+/* end tarot cards */
