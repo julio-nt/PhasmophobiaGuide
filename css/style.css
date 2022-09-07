@@ -72,7 +72,7 @@ nav {
 }
 /**/
 
-span {
+.menu-span {
 	font-size: 20pt;
 	padding: 10px;
 	color: white;
@@ -230,4 +230,46 @@ ol.list-none {
 .content {
 	display: flex;
 	flex-direction: row;
+}
+
+/* tarot cards colors */
+
+#sun {
+	color: yellow;
+}
+
+#moon {
+	color: white;
+}
+
+#tower {
+	color: blue;
+}
+
+#wheel {
+	color: green;
+}
+
+#fortune {
+	color: red;
+}
+
+#devil {
+	color: pink;
+}
+
+#priestess {
+	color: rgb(255, 255, 137);
+}
+
+#death {
+	color: purple;
+}
+
+#hermit {
+	color: cyan;
+}
+
+#fool {
+	color: violet;
 }
