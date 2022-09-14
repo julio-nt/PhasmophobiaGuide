@@ -1,7 +1,9 @@
-body {
+body,
+html {
 	background-color: black;
 	color: rgb(176, 176, 176);
 	font-family: sans-serif;
+	scroll-behavior: smooth;
 }
 
 header {
@@ -60,7 +62,7 @@ nav {
 }
 
 /*index images small size style*/
-@media (max-width: 1300px) {
+@media (max-width: 1366px) {
 	.img-wrap {
 		width: 20rem;
 		height: 15rem;
@@ -100,7 +102,33 @@ a:visited {
 	opacity: 1;
 }
 
-.welcome-noob {
+footer {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 60%;
+	left: 2rem;
+	border: 1px solid white;
+	padding: 10px;
+}
+
+.form-item {
+	width: 15rem;
+}
+
+#message {
+	height: 7rem;
+	width: 25rem;
+}
+
+#submit {
+	padding: 20px;
+	position: relative;
+	top: -2rem;
+	left: 40%;
+}
+
+/* .welcome-noob {
 	display: flex;
 	flex-direction: column;
 	width: 35rem;
@@ -117,7 +145,7 @@ a:visited {
 
 .welcome-noob button {
 	width: 20rem;
-}
+} */
 
 h3.instruction {
 	font-size: 10pt;
