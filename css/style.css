@@ -61,19 +61,6 @@ nav {
 	height: 20rem;
 }
 
-/*index images small size style*/
-@media (max-width: 1366px) {
-	.img-wrap {
-		width: 20rem;
-		height: 15rem;
-	}
-	.menu-img {
-		width: 20rem;
-		height: 15rem;
-	}
-}
-/**/
-
 .menu-span {
 	font-size: 20pt;
 	padding: 10px;
@@ -156,6 +143,32 @@ h3.instruction {
 	top: 1rem;
 	left: 80%;
 }
+
+/*index images small size style*/
+@media (max-width: 1366px) {
+	.img-wrap {
+		width: 20rem;
+		height: 15rem;
+	}
+	.menu-img {
+		width: 20rem;
+		height: 15rem;
+	}
+	.menu-span {
+		font-size: 15pt;
+
+		position: relative;
+		top: -50%;
+		left: 30%;
+	}
+}
+
+@media (max-height: 700px) {
+	footer {
+		top: 70%;
+	}
+}
+/**/
 
 /**/
 /* GHOSTS PAGE */
