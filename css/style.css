@@ -115,25 +115,6 @@ footer {
 	left: 40%;
 }
 
-/* .welcome-noob {
-	display: flex;
-	flex-direction: column;
-	width: 35rem;
-	border: 1px solid white;
-	padding: 10px;
-
-	margin-top: 5rem;
-	margin-left: 2rem;
-}
-
-.welcome-noob h2 {
-	font-size: 14pt;
-}
-
-.welcome-noob button {
-	width: 20rem;
-} */
-
 h3.instruction {
 	font-size: 10pt;
 	width: 15rem;
@@ -145,35 +126,7 @@ h3.instruction {
 }
 
 /*index images small size style*/
-@media (max-width: 1366px) {
-	.img-wrap {
-		width: 20rem;
-		height: 15rem;
-	}
-	.menu-img {
-		width: 20rem;
-		height: 15rem;
-	}
-	.menu-span {
-		font-size: 15pt;
 
-		position: relative;
-		top: -50%;
-		left: 30%;
-	}
-}
-
-@media (max-height: 700px) {
-	h3.instruction {
-		left: 65%;
-	}
-	footer {
-		top: 70%;
-	}
-	.map-description {
-		font-size: 9pt;
-	}
-}
 /**/
 
 /**/
@@ -350,3 +303,100 @@ ol.list-none {
 }
 
 /* end tarot cards */
+/* resize */
+
+@media (max-width: 1366px) {
+	.img-wrap {
+		width: 23rem;
+		height: 15rem;
+	}
+	.menu-img {
+		width: 23rem;
+		height: 15rem;
+	}
+	.menu-span {
+		font-size: 15pt;
+
+		position: relative;
+		top: -50%;
+		left: 35%;
+	}
+
+	h3.instruction {
+		left: 75%;
+	}
+	footer {
+		top: 70%;
+	}
+	.map-description {
+		font-size: 11pt;
+	}
+}
+
+@media (max-width: 1280px) {
+	.img-wrap {
+		width: 20rem;
+		height: 15rem;
+	}
+	.menu-img {
+		width: 20rem;
+		height: 15rem;
+	}
+	.menu-span {
+		font-size: 15pt;
+
+		position: relative;
+		top: -55%;
+		left: 35%;
+	}
+	footer {
+		top: 60%;
+	}
+}
+
+@media (max-width: 1024px) {
+	.map-img {
+		width: 35rem;
+		height: 35rem;
+		margin-top: 10px;
+	}
+
+	.map-description {
+		font-size: 10pt;
+	}
+}
+
+@media (max-width: 800px) {
+	.img-wrap {
+		width: 15rem;
+		height: 15rem;
+	}
+	.menu-img {
+		width: 15rem;
+		height: 12rem;
+	}
+	.menu-span {
+		font-size: 15pt;
+
+		position: relative;
+		top: -50%;
+		left: 30%;
+	}
+	.footer-title {
+		font-size: 14pt;
+	}
+	#submit {
+		left: 25%;
+	}
+	.map-all {
+		gap: 1rem;
+	}
+	.map-img {
+		width: 32rem;
+		height: 32rem;
+		margin-top: 10px;
+	}
+	.map-description {
+		font-size: 8pt;
+	}
+}
