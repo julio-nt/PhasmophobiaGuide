@@ -5,72 +5,58 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Phasmophobia Guide</title>
 		<link rel="stylesheet" href="./css/style.css" />
-		<script src="script.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+		/>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 	</head>
-	<body>
+	<body class="h-100">
 		<header>
-			<h1 class="site-title">Phasmophobia Guide</h1>
-			<h3 class="instruction">
-				The main guide is for people that have familiarity with the game
-				and want to know all the tricks it has, if you are new check out
-				the guide at the bottom.
-			</h3>
+			<div class="row container-fluid">
+				<h1 class="col-sm-8">Phasmophobia Complete Guide</h1>
+				<p class="col-sm-3 mt-2 instruction">
+					This guide contains everything you must know about the game
+				</p>
+			</div>
 		</header>
-		<main>
-			<nav class="img-nav">
-				<div class="img-wrap" id="ghost">
-					<a href="ghosts.html"
-						><img class="menu-img" src="images/ghost-1.jpg" /><span
-							class="menu-span"
-							>GHOSTS</span
-						></a
-					>
-				</div>
-				<div class="img-wrap" id="photos">
-					<a href="maps.html"
-						><img class="menu-img" src="images/map.png" /><span
-							class="menu-span"
-							>MAPS</span
-						></a
-					>
-				</div>
-				<div class="img-wrap" id="maps">
-					<a href="more-phasmo.html"
-						><img
-							class="menu-img"
-							src="images/more-phasmo.jpg"
-						/><span class="menu-span">MORE</span></a
-					>
-				</div>
-			</nav>
-			<footer>
-				<h2 class="footer-title">
-					Is there wrong information or should something be added?
-					Please tell me!
-				</h2>
-				<form
-					action="mailto:julio.nt753@gmail.com?subject=Feedback Phasmophobia"
-					method="POST"
-					enctype="text/plain"
-				>
-					<p><label for="email" class="form-input">Email:</label></p>
-					<input
-						type="email"
-						id="email"
-						class="form-item"
-						name="email"
+		<div class="d-flex flex-wrap justify-content-around pt-5">
+			<div class="img-wrap">
+				<a href="ghosts.html">
+					<img
+						class="menu-img"
+						alt="Link to Ghost page"
+						src="./images/ghost-1.jpg"
 					/>
-					<p>
-						<label for="message" class="form-input">Message</label>
-					</p>
-					<textarea
-						id="message"
-						name="message"
-						class="form-item"
-					></textarea>
-					<input type="submit" id="submit" value="Send" />
-				</form>
-			</footer>
-		</main>
+					<span class="menu-span">GHOST</span>
+				</a>
+			</div>
+			<div class="img-wrap">
+				<a href="maps.html">
+					<img
+						class="menu-img"
+						alt="Link to Maps page"
+						src="./images/map.png"
+					/>
+					<span class="menu-span">MAPS</span>
+				</a>
+			</div>
+			<div class="img-wrap">
+				<a href="more-phasmo.html">
+					<img
+						class="menu-img"
+						alt="Link to More Phasmo page"
+						src="./images/more-phasmo.jpg"
+					/>
+					<span class="menu-span">MORE</span>
+				</a>
+			</div>
+		</div>
+		<footer>
+			<div class="d-flex flex-column ps-2">
+				<h4>Is there something wrong? Please, tell me!</h4>
+				<h5>Email: julio.nt753@gmail.com</h5>
+			</div>
+		</footer>
 	</body>
 </html>

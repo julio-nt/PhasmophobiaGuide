@@ -5,62 +5,58 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Maps Guide</title>
 		<link rel="stylesheet" href="./css/style.css" />
-		<script src="./script.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+		/>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 	</head>
 	<body>
+		<div class="offcanvas offcanvas-start text-bg-dark" id="map-list">
+			<div class="offcanvas-header">
+				<h1 class="offcanvas-title">Map List</h1>
+				<button
+					type="button"
+					class="btn-close text-reset"
+					data-bs-dismiss="offcanvas"
+				></button>
+			</div>
+			<div class="offcanvas-body">
+				<ul class="nav flex-column">
+					<li class="nav-item">
+						<a class="nav-link" href="#tanglewood">Tanglewood</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#willow">Willow Street</a>
+					</li>
+				</ul>
+			</div>
+		</div>
 		<header>
-			<h1 class="site-title">PHASMOPHOBIA GUIDE</h1>
-			<button class="btn home-map">
-				<a class="normal-link" id="btn" href="index.html">HOME</a>
-			</button>
-			<h2 class="page-title">Maps</h2>
-			<nav class="nav-more">
-				<ul class="menu-more">
-					<div class="dropdown">
-						<li>Find a map</li>
-						<ul class="dropdown-content">
-							<li class="dropdown-list">
-								<a href="#tanglewood">Tanglewood</a>
-							</li>
-							<li class="dropdown-list">
-								<a href="#willow">Willow</a>
-							</li>
-							<li class="dropdown-list">
-								<a href="#ridge">Ridgeview</a>
-							</li>
-							<li class="dropdown-list">
-								<a href="#edge">Edgefield</a>
-							</li>
-							<li class="dropdown-list">
-								<a href="#grafton">Grafton</a>
-							</li>
-							<li class="dropdown-list">
-								<a href="#bleasdale">Bleasdale</a>
-							</li>
-							<li class="dropdown-list">
-								<a href="#camp">Campsite</a>
-							</li>
-							<li class="dropdown-list">
-								<a href="#prison">Prison</a>
-							</li>
-							<li class="dropdown-list">
-								<a href="#school">School</a>
-							</li>
-							<li class="dropdown-list">
-								<a href="#asylum">Asylum</a>
-							</li>
-						</ul>
-					</div>
-					<h3 class="instruction">
-						"Possible Hiding Spot" means that is an unchangeable spot (every
-						game it will be there), while Hiding Spots may be blocked.
-						Like normal Hiding Spots, it has a great chance that the Ghost won't go there.
-					</h3>
+			<nav class="navbar fixed-top navbar-expand-sm bg-dark navbar-dark">
+				<div class="container-fluid">
+					<ul class="navbar-nav">
+						<a class="navbar-brand" href="#home"
+							>Phasmophobia Guide</a
+						>
+						<li class="nav-item ps-5">
+							<button
+								class="btn btn-dark"
+								type="button"
+								data-bs-toggle="offcanvas"
+								data-bs-target="#map-list"
+							>
+								Map List
+							</button>
+						</li>
+					</ul>
+				</div>
+			</nav>
 		</header>
 		<main>
 			<hr />
 			<!--	TANGLEWOOD STREET HOUSE GUIDE	-->
-			<article id='tanglewood' class="map-all">
+			<article id="tanglewood" class="map-all">
 				<img class="map-img" src="./images/tanglewood.jpg" />
 				<section class="map-description">
 					<h2 class="title">Tanglewood Street House Guide</h2>
@@ -83,21 +79,24 @@
 						equipment before you hide there).
 					</p>
 					<h4>Best and Worst place for Ghost Room</h4>
-					<p class='text'>
-						The worst Ghost Room you may get on this map are on the Foyer
-						and on the Living Room because those are big and can be easily
-						confused with other places, also Utility Room is no good either, since it means the Ghost
-						will interact other places, like Garage and Kitchen, because it has almost nothing inside the Utility Room.
-						The best is probably Nursery, because is small, but not that small and is easier to get evidence.
+					<p class="text">
+						The worst Ghost Room you may get on this map are on the
+						Foyer and on the Living Room because those are big and
+						can be easily confused with other places, also Utility
+						Room is no good either, since it means the Ghost will
+						interact other places, like Garage and Kitchen, because
+						it has almost nothing inside the Utility Room. The best
+						is probably Nursery, because is small, but not that
+						small and is easier to get evidence.
 					</p>
 					<h4>More info</h4>
 					<p class="text">
-						I also don't advise hiding inside the Foyer Hiding Spot on
-						the right (close to the Living Room), the Ghost usually
-						opens a lot that door. My favourites Hiding Spots in
-						this map is the one in the Basement and Nursery and the
-						Possible Hiding Spot in the Dining Room because there's
-						no door that the Ghost can open.
+						I also don't advise hiding inside the Foyer Hiding Spot
+						on the right (close to the Living Room), the Ghost
+						usually opens a lot that door. My favourites Hiding
+						Spots in this map is the one in the Basement and Nursery
+						and the Possible Hiding Spot in the Dining Room because
+						there's no door that the Ghost can open.
 					</p>
 					<p class="text">
 						Some say it is a good map for beginners, but I disagree,
@@ -112,7 +111,7 @@
 			</article>
 			<hr />
 			<!--	WILLOW STREET HOUSE GUIDE	-->
-			<article id='willow' class="map-all">
+			<article id="willow" class="map-all">
 				<img
 					class="map-img"
 					alt="Willow Street Map"
@@ -120,31 +119,35 @@
 				/>
 				<section class="map-description">
 					<h2 class="title">Willow Street House Guide</h2>
-					<p class='text'>
-						Willow is the second smallest map this game has, it is one
-						of my favourite maps, it has only first floor and basement like Tanglewood.
+					<p class="text">
+						Willow is the second smallest map this game has, it is
+						one of my favourite maps, it has only first floor and
+						basement like Tanglewood.
 					</p>
 					<h4>Possible Hiding Spot info</h4>
-					<p class='text'>
-						The Possible Hiding Spots on this map are, behind the washing machine in the Utility Room, behind the
-						tool desk in the Garage (I died on this spot a few times, but I still usually hide there) and behind the desk inside the Master
-						Bedroom.
+					<p class="text">
+						The Possible Hiding Spots on this map are, behind the
+						washing machine in the Utility Room, behind the tool
+						desk in the Garage (I died on this spot a few times, but
+						I still usually hide there) and behind the desk inside
+						the Master Bedroom.
 					</p>
 					<h4>Best and Worst place for Ghost Room</h4>
-					<p class='text'>
-						The worst place for Ghost Room you may get is the Basement Hallway,
-						because it's really big, Garage is no good either. The best is probably the Bathroom or kitchen, they are small,
-						easy to get evidence, easy to use crucifixes and there are a lot of stuff for the Ghost to interact with. The rooms in Basement might
-						be good to for the same reason, but it's scarier to stay there.
+					<p class="text">
+						The worst place for Ghost Room you may get is the
+						Basement Hallway, because it's really big, Garage is no
+						good either. The best is probably the Bathroom or
+						kitchen, they are small, easy to get evidence, easy to
+						use crucifixes and there are a lot of stuff for the
+						Ghost to interact with. The rooms in Basement might be
+						good to for the same reason, but it's scarier to stay
+						there.
 					</p>
 				</section>
 			</article>
 			<hr />
-			<article id='edge' class='map-all'>
-				<img
-				class='map-img'
-				alt='Edgefield Street House'
-				src=''>
+			<article id="edge" class="map-all">
+				<img class="map-img" alt="Edgefield Street House" src="" />
 			</article>
 		</main>
 	</body>

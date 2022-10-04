@@ -4,23 +4,21 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Ghosts Guide</title>
-		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/ghost.css" />
 		<script src="script.js"></script>
 	</head>
 	<body>
 		<header>
-			<h1 class="site-title">Phasmophobia Guide</h1>
-			<h2 class="page-title">Ghosts</h2>
-			<button class="btn home-ghost">
-				<a id="btn" href="index.html">HOME</a>
-			</button>
-			<h3 class="instruction">
-				Click on the ghost name to show or hide tips.
-			</h3>
-			<button class="btn">
-				<a id="btn refresh" href="ghosts.html">HIDE ALL</a>
-			</button>
+			<h1 class="site-title">Phasmophobia Complete Guide</h1>
+			<h2 class="page-title">GHOSTS</h2>
 		</header>
+
+		<a id="btn" href="index.html">
+			<button>HOME</button>
+		</a>
+		<a href="ghosts.html">
+			<button>HIDE ALL</button>
+		</a>
 		<main>
 			<!-- GHOSTS -->
 			<section class="ghost-info">
@@ -29,35 +27,6 @@
 						Spirit
 					</li>
 					<section hidden id="spirit" class="ghost-description">
-						<!-- <div class="description-container">
-							<h3 class="ghost-info ghost-description-title">
-								Info
-							</h3>
-							<p class="ghost-info ghost-description-info">
-								When smudged, can't hunt for 3 minutes instead
-								of the normal 1.5
-							</p>
-							<h3 class="ghost-info ghost-description-info title">
-								Sanity for hunt possibility
-							</h3>
-							<p class="ghost-info ghost-description-info">50%</p>
-							<h3 class="ghost-info ghost-description-title">
-								Ghost Speed
-							</h3>
-							<p class="ghost-info ghost-description-info">
-								1.6 m/s
-							</p>
-							<h3 class="ghost-info ghost-description-title">
-								Test:
-							</h3>
-							<p class="ghost-info ghost-description-info">
-								There is no good test for the Spirit, but when
-								your team is at 0% sanity and the ghost is
-								hunting constantly you can smudge it and count
-								if it will take 3 minutes or more to begin
-								another hunt.
-							</p>
-						</div> -->
 						<h3>Tips:</h3>
 						<p class="text">
 							When smudged, can't hunt for 3 minutes instead of
@@ -168,6 +137,7 @@
 					<section class="ghost-description" hidden id="polter">
 						<h3>Tips:</h3>
 						<p class="text">Can throw a bunch of things at once.</p>
+						<p class='text'>Can throw things at longer distance.</p>
 						<h3>Ghost Speed:</h3>
 						<p class="text">1.6 m/s (normal)</p>
 						<h3>Hunts possible at:</h3>
@@ -486,7 +456,9 @@
 					<section class="ghost-description" hidden id="oni">
 						<h3>Tips:</h3>
 						<p class="text">
-							Cannot do the hiss/"air ball" ghost event.
+							Cannot do the hiss/"air ball" ghost event.</p>
+							<p class='text'>Makes players lose sanity faster when doing an Ghost Event.</p>
+							<p class='text'>Blink faster (is more visible) during a hunt.</p>
 						</p>
 						<p class="text">
 							Has very strong throws, if something was thrown very

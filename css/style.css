@@ -1,64 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400&display=swap');
+
 body,
 html {
-	background-color: black;
-	color: rgb(176, 176, 176);
-	font-family: sans-serif;
-	scroll-behavior: smooth;
+	font-family: 'Barlow', sans-serif !important;
+	background-color: black !important;
+	color: white !important;
+	overflow-x: hidden;
 }
 
-header {
-	margin-bottom: 4rem;
+#page-title {
+	margin-left: auto;
+	margin-right: 27%;
+	text-align: start;
 }
 
-.site-title {
-	position: relative;
-	left: 5rem;
-	top: 1rem;
-	text-transform: uppercase;
-	width: 30rem;
-}
-
-.page-title {
-	text-transform: uppercase;
-	text-decoration: underline;
-	text-align: center;
-}
-
-button {
-	position: relative;
-	left: 2rem;
-
-	padding: 10px;
-	border-radius: 5px;
-}
-
-h4.instruction {
-	position: relative;
-	left: 1rem;
-	width: 400px;
-}
-
-nav {
-	display: flex;
-	justify-content: space-evenly;
-}
-
-.img-nav {
-	display: flex;
-	justify-content: space-evenly;
-	margin-top: 8rem;
+.instruction {
+	border: 2px dotted white;
 }
 
 .img-wrap {
-	display: flex;
-	position: relative;
-	width: 30rem;
-	height: 20rem;
+	width: 25rem;
+	height: 15rem;
 }
 
 .menu-img {
-	width: 30rem;
-	height: 20rem;
+	width: 25rem;
+	height: 15rem;
+	border: 2px solid white;
 }
 
 .menu-span {
@@ -68,17 +36,8 @@ nav {
 	opacity: 0;
 
 	position: relative;
-	top: -50%;
-	left: 35%;
-}
-
-a:link {
-	text-decoration: none;
-	color: black;
-}
-
-a:visited {
-	color: black;
+	top: -60%;
+	left: 36%;
 }
 
 .img-wrap:hover img {
@@ -89,156 +48,33 @@ a:visited {
 	opacity: 1;
 }
 
+a:link {
+	text-decoration: none;
+}
+
 footer {
-	display: flex;
-	flex-direction: column;
-	position: absolute;
-	top: 60%;
-	left: 2rem;
-	border: 1px solid white;
-	padding: 10px;
-}
-
-.form-item {
-	width: 15rem;
-}
-
-#message {
-	height: 7rem;
-	width: 25rem;
-}
-
-#submit {
-	padding: 20px;
 	position: relative;
-	top: -2rem;
-	left: 40%;
+	top: 20%;
 }
 
-h3.instruction {
-	font-size: 10pt;
-	width: 15rem;
-	border: 2px dotted white;
-	padding: 5px;
-	position: absolute;
-	top: 1rem;
-	left: 80%;
+.title {
+	color: red;
 }
 
-/*index images small size style*/
-
-/**/
-
-/**/
-/* GHOSTS PAGE */
-/**/
-
-.ghost-name {
-	border: 1px solid rgb(176, 176, 176);
-	width: 130px;
-	padding: 5px;
-	margin-bottom: 10px;
-	list-style-position: inside;
+.nav-more a {
+	color: white;
 }
 
-.description-container {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	height: 15rem;
-	width: 90%;
+.nav-more a:link {
+	color: white;
 }
 
-.ghost-description {
-	border: 1px solid rgb(176, 176, 176);
-	width: 90%;
-	padding: 5px;
-	margin-bottom: 10px;
-	margin-top: -10px;
-	margin-left: 10px;
-	list-style-position: inside;
-}
-
-/**/
-/* MAPS PAGE */
-/**/
-button.home-map {
-	position: absolute;
-	top: 100px;
-}
-
-.map-all {
-	display: flex;
-	flex-direction: row;
-	gap: 2rem;
-	margin-top: 4rem;
-}
-
-.map-img {
-	width: 40rem;
-	height: 40rem;
-	margin-top: 10px;
-}
-
-.map-description {
-	height: 40rem;
-}
-
-.text {
-	text-indent: 2rem;
-}
-
-/**/
-/* MORE PAGE */
-/**/
-
-ul.menu-more {
-	list-style: none;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	width: 35rem;
-}
-
-.dropdown-content {
-	display: none;
-	position: absolute;
-	list-style: none;
-	padding: 3px;
-}
-
-.dropdown-list {
-	padding: 5px;
-	background-color: gray;
+.dropdown-menu a {
 	color: black;
 }
 
-.dropdown-list:hover {
-	background-color: white;
-}
-
-.dropdown:hover .dropdown-content {
-	display: block;
-}
-
-.content-section {
-	width: 25%;
-	margin-left: 1rem;
-	padding-right: 10px;
-	border-right: 1px solid white;
-}
-
-.divider {
-	margin-top: 50px;
-}
-
-ol.list-none {
-	list-style: none;
-}
-
-.content {
-	display: flex;
-	flex-direction: row;
+.dropdown-menu a:link {
+	color: black;
 }
 
 /* emf and tarot colors */
@@ -296,107 +132,4 @@ ol.list-none {
 
 #fool {
 	color: violet;
-}
-
-.white-link {
-	color: white;
-}
-
-/* end tarot cards */
-/* resize */
-
-@media (max-width: 1366px) {
-	.img-wrap {
-		width: 23rem;
-		height: 15rem;
-	}
-	.menu-img {
-		width: 23rem;
-		height: 15rem;
-	}
-	.menu-span {
-		font-size: 15pt;
-
-		position: relative;
-		top: -50%;
-		left: 35%;
-	}
-
-	h3.instruction {
-		left: 75%;
-	}
-	footer {
-		top: 70%;
-	}
-	.map-description {
-		font-size: 11pt;
-	}
-}
-
-@media (max-width: 1280px) {
-	.img-wrap {
-		width: 20rem;
-		height: 15rem;
-	}
-	.menu-img {
-		width: 20rem;
-		height: 15rem;
-	}
-	.menu-span {
-		font-size: 15pt;
-
-		position: relative;
-		top: -55%;
-		left: 35%;
-	}
-	footer {
-		top: 60%;
-	}
-}
-
-@media (max-width: 1024px) {
-	.map-img {
-		width: 35rem;
-		height: 35rem;
-		margin-top: 10px;
-	}
-
-	.map-description {
-		font-size: 10pt;
-	}
-}
-
-@media (max-width: 800px) {
-	.img-wrap {
-		width: 15rem;
-		height: 15rem;
-	}
-	.menu-img {
-		width: 15rem;
-		height: 12rem;
-	}
-	.menu-span {
-		font-size: 15pt;
-
-		position: relative;
-		top: -50%;
-		left: 30%;
-	}
-	.footer-title {
-		font-size: 14pt;
-	}
-	#submit {
-		left: 25%;
-	}
-	.map-all {
-		gap: 1rem;
-	}
-	.map-img {
-		width: 32rem;
-		height: 32rem;
-		margin-top: 10px;
-	}
-	.map-description {
-		font-size: 8pt;
-	}
 }
