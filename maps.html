@@ -17,17 +17,22 @@
 				<h1 class="offcanvas-title">Map List</h1>
 				<button
 					type="button"
-					class="btn-close text-reset"
+					class="btn-close btn-close-white text-reset"
 					data-bs-dismiss="offcanvas"
 				></button>
 			</div>
 			<div class="offcanvas-body">
 				<ul class="nav flex-column">
 					<li class="nav-item">
-						<a class="nav-link" href="#tanglewood">Tanglewood</a>
+						<a class="nav-link" href="#tanglewood"
+							>Tanglewood Drive</a
+						>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#willow">Willow Street</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#edge">Edgefield Road</a>
 					</li>
 				</ul>
 			</div>
@@ -55,10 +60,10 @@
 		</header>
 		<main>
 			<!--	TANGLEWOOD STREET HOUSE GUIDE	-->
-			<div class="container-fluid row pt-5 mt-4" id="tanglewood">
-				<img class="col-sm-6 h-75 w-50" src="./images/tanglewood.jpg" />
+			<p id="tanglewood" class="pt-2"></p>
+			<div class="container-fluid row pt-5 mt-5">
 				<div class="col-sm-6">
-					<h2 class="title">Tanglewood Street House Guide</h2>
+					<h2 class="title">Tanglewood Drive</h2>
 					<p>
 						The guide is mostly the map on the left with all
 						locations, so here I will just put few more information.
@@ -107,17 +112,14 @@
 						the door to the Basement and Utility Room).
 					</p>
 				</div>
+				<img class="col-sm-6 h-75 w-50" src="./images/tanglewood.jpg" />
 			</div>
+			<p id="willow" class="pt-5"></p>
 			<hr />
 			<!--	WILLOW STREET HOUSE GUIDE	-->
-			<div class="container-fluid row" id="willow">
-				<img
-					class="col-sm-6 h-75 w-50"
-					alt="Willow Street Map"
-					src="./images/willow.jpg"
-				/>
+			<div class="container-fluid row">
 				<div class="col-sm-6">
-					<h2 class="title">Willow Street House Guide</h2>
+					<h2 class="title">Willow Street</h2>
 					<p>
 						Willow is the second smallest map this game has, it is
 						one of my favourite maps, it has only first floor and
@@ -143,11 +145,25 @@
 						there.
 					</p>
 				</div>
+				<img
+					class="col-sm-6 h-75 w-50"
+					alt="Willow Street Map"
+					src="./images/willow.jpg"
+				/>
 			</div>
+			<!--EDGEFIELD ROAD-->
+			<p id="edge" class="pt-5"></p>
 			<hr />
-			<article id="edge" class="map-all">
-				<img class="map-img" alt="Edgefield Street House" src="" />
-			</article>
+			<div class="container-fluid row">
+				<div class="col-sm-6">
+					<h2 class="title">Edgefield Road</h2>
+				</div>
+				<img
+					class="col-sm-6 h-75 w-50"
+					alt="Edgefield Road Map"
+					src="./images/edge-road.jpg"
+				/>
+			</div>
 		</main>
 	</body>
 </html>
