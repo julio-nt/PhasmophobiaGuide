@@ -34,6 +34,7 @@ html {
 	padding: 10px;
 	color: white;
 	opacity: 0;
+	transition: 1s;
 
 	position: relative;
 	top: -60%;
@@ -68,15 +69,6 @@ footer {
 .nav-more a:link {
 	color: white;
 }
-
-.dropdown-menu a {
-	color: black;
-}
-
-.dropdown-menu a:link {
-	color: black;
-}
-
 /* emf and tarot colors */
 #emf2 {
 	color: green;
