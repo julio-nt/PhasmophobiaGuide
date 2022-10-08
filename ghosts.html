@@ -40,10 +40,9 @@
 						<p class="text">
 							There is no good test for the Spirit, but when your
 							team is at 0% sanity and the ghost is hunting
-							constantly you can smudge its room and count if it
-							will take 3 minutes or more to begin another hunt
-							(you have to smudge the room, not the Ghost when
-							it's hunting).
+							constantly you can smudge the ghost and put a timer (when it
+							was smudged, not when the hunt ends) and check if it will take
+							less than 1:30 minutes to be able to start another hunt.
 						</p>
 						<h3>Evidence:</h3>
 						<p class="text">EMF 5</p>
@@ -135,6 +134,8 @@
 						<h3>Tips:</h3>
 						<p class="text">Can throw a bunch of things at once.</p>
 						<p class='text'>Can throw things at longer distance.</p>
+						<p class='text'>Has 100% chance of throwing objects at range durging
+							a hunt every 0.5 seconds,while other ghosts has 50% chance.</p>
 						<h3>Ghost Speed:</h3>
 						<p class="text">1.6 m/s (normal)</p>
 						<h3>Hunts possible at:</h3>
@@ -227,7 +228,8 @@
 						<p class="text">
 							Has a random chance to drain 25% sanity with no
 							visual or audio queues when you're close enough to
-							it.
+							it, this will also cause EMF to the breaker (the Jinn
+							can also only use that ability if the breaker is on).
 						</p>
 						<h3>Ghost Speed:</h3>
 						<p class="text">
@@ -243,6 +245,9 @@
 							then watch it carefully, is the Ghost coming fast and then when it is close
 							to you it slows down? It's a Jinn! If you are not sure try again with the breaker off and check
 							if you still notice a different speed when it is close.
+						</p>
+						<p class='text'>Check for EMF on the breaker, if it is beeping without being turned off or moved (the Ghost
+							can move the new breaker) it is a Jinn.
 						</p>
 						<p class="text">
 							If the Ghost turns off the breaker it isn't a Jinn.
@@ -270,8 +275,8 @@
 						<h3>Ghost Speed:</h3>
 						<p class="text">1.6 m/s (normal)</p>
 						<h3>Hunts possible at:</h3>
-						<p class="text">60% team sanity if light on</p>
-						<p class="text">40% team sanity if light off</p>
+						<p class="text">60% team sanity if light off</p>
+						<p class="text">40% team sanity if light on</p>
 						<h3>Test:</h3>
 						<p class="text">
 							Turn on the light of its room and see if it will
@@ -335,8 +340,8 @@
 						</p>
 						<p class='text'>More likely to do non-physical ghost events.</p>
 						<p class="text">
-							Shade has a chance of appearing as a black shadow
-							when walking towards the Music Box.
+							Shade will never appear in flesh during events and using
+							the Summoning Circle and Music Box, only as shadow, translucent or gas.
 						</p>
 						<h3>Ghost Speed:</h3>
 						<p class="text">1.6 m/s (normal)</p>
@@ -368,10 +373,6 @@
 						<p class="text">
 							When smudged, can't hunt for 1 minute instead of the
 							normal 1.5 minutes.
-						</p>
-						<p class="text">
-							Smudges during hunt don't last as long than the
-							other ghosts.
 						</p>
 						<p class="text">
 							Are affected by crucifixes from a much larger
@@ -419,9 +420,6 @@
 							Smudging will prevent roaming for 90 seconds (not
 							during a hunt).
 						</p>
-						<p class="text">
-							Yurei is more likely to do the airball event.
-						</p>
 						<h3>Ghost Speed:</h3>
 						<p class="text">1.6 m/s (normal)</p>
 						<h3>Hunts possible at:</h3>
@@ -452,14 +450,9 @@
 					<li class="ghost-name" onclick="toggleGhost('oni')">Oni</li>
 					<section class="ghost-description" hidden id="oni">
 						<h3>Tips:</h3>
-						<p class="text">
-							Cannot do the hiss/"air ball" ghost event.</p>
+							<p class="text">Cannot do the hiss/"air ball" ghost event.</p>
 							<p class='text'>Makes players lose sanity faster when doing an Ghost Event.</p>
 							<p class='text'>Blink faster (is more visible) during a hunt.</p>
-						</p>
-						<p class="text">
-							Has very strong throws, if something was thrown very
-							far, you can start thinking Oni did that.
 						</p>
 						<h3>Ghost Speed:</h3>
 						<p class="text">1.6 m/s (normal)</p>
@@ -622,15 +615,18 @@
 						<p class="text">50% team sanity</p>
 						<h3>Test:</h3>
 						<p class="text">
-							Listen closely to the ghost footsteps, if it really
-							low it is a Myling.
+							Listen closely to the ghost sound it makes during the hunt (footsteps and
+							voice), it will be lower than other ghosts.
 						</p>
 						<p class="text">
 							Another way to tell is by dropping a flashligh on by
 							your hiding spot and pay attention if you can only
 							hear the footsteps when the flashligh is flashing.
 							With other ghosts you will be able to hear the
-							footsteps first.
+							footsteps first. (take into account that you can
+							hear footsteps if the ghost is on other floor
+							but the equipment won't beep if the ghost is not
+							on the same floor).
 						</p>
 						<h3>Evidence:</h3>
 						<p class="text">EMF 5</p>
@@ -643,10 +639,6 @@
 					</li>
 					<section class="ghost-description" hidden id="onryo">
 						<h3>Tips:</h3>
-						<p class="text">
-							Can hunt as early as 60% sanity unless there is a
-							candel nearby.
-						</p>
 						<p class="text">More likely to blow out candles.</p>
 						<p class="text">
 							After 3 candles have been blown out, each
@@ -656,26 +648,22 @@
 						<p class="text">
 							Each dead player increases the chance to hunt after
 							blowing out candles by 25%, that means if 2 players
-							are dead the chance is 100% of hunt after a blown
+							are dead the chance is 100% of a hunt after a blown
 							out candle.
 						</p>
 						<p class="text">
 							Candles work similarly to crucifixes, it will be
-							blown if onryo tries to hunt and block his hunt
+							blown if Onryo tries to hunt and block his hunt
 							(candles take priority than crucifixes).
 						</p>
 						<h3>Ghost Speed:</h3>
 						<p class="text">1.6 m/s (normal)</p>
 						<h3>Hunts possible at:</h3>
-						<p class='text'>60% team sanity if no candles nearby</p>
-						<p class="text">50% team sanity if candle nearby</p>
+						<p class='text'>60% team sanity</p>
 						<h3>Test:</h3>
 						<p class="text">
-							Put candles on the Ghost Room, if the ghost start a
-							hunt inside the room with the candles on it's
-							definitely not an Onryo. Be careful, if you keep
-							lighting the candles it may start a hunt outside the
-							room far from the candle range.
+							Put a candle on top of a Crucifix, if the crucifix burnt without
+							the candle being blown it's definitely not a Onryo.
 						</p>
 						<h3>Evidence:</h3>
 						<p class="text">Spirit Box</p>
@@ -689,28 +677,29 @@
 					<section class="ghost-description" hidden id="twins">
 						<h3>Tips:</h3>
 						<p class="text">
-							One ghost, but has a decoy that can interact on
-							other rooms far away.
+							One ghost, but has a decoy that can interact and
+							hunt far from the Ghost Room.
 						</p>
 						<p class="text">
 							The main twin will have 90% ghost speed while the
-							decoy twin will have 110% ghost speed.
+							other will have 110% ghost speed.
 						</p>
 						<p class="text">
 							Crucifixes only need to be placed where the main
 							twin is.
 						</p>
+						<p class='text'>Can do a double interaction</p>
 						<p class="text">
 							Will often leave "slope changing" lines on the
 							activity chart. If the lines changes slopes without
-							leveling off it's almost always the twins.
+							leveling off it's almost always The Twins.
 						</p>
 						<h3>Ghost Speed:</h3>
 						<p class="text">
-							1.4 m/s (little slower) when it's the Ghost huntint
+							1.4 m/s (little slower) when it's the main twin huntint
 						</p>
 						<p class="text">
-							1.7 (little faster) when it's the Decoy hunting
+							1.7 (little faster) when it's the second twin hunting
 						</p>
 						<h3>Hunts possible at:</h3>
 						<p class="text">50% team sanity</p>
@@ -720,6 +709,11 @@
 							notice that sometimes it's a little bit slower than
 							normal and sometimes is a little bit faster than
 							normal, it's a twins.
+						</p>
+						<p class='text'>Twins is pretty easy to distinguish from other Ghosts
+							in my opnion, if hear two things being interacted at once (2 cups being thrown
+							or a cup and a door moving, etc) it's The Twins. Be careful to not mistake it
+							to a very active Ghost.
 						</p>
 						<h3>Evidence:</h3>
 						<p class="text">EMF 5</p>
@@ -963,10 +957,10 @@
 						</p>
 						<h3>Ghost Speed:</h3>
 						<p class="text">
-							0.4 m/s (slowest ghost) when far to player
+							0.4 m/s (slowest ghost) when close to player
 						</p>
 						<p class="text">
-							3 m/s (fastest ghost) when close to player
+							3 m/s (fastest ghost) when far to player
 						</p>
 						<h3>Hunts possible at:</h3>
 						<p class="text">40% team sanity</p>
